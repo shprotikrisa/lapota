@@ -1,0 +1,54 @@
+@import './base/colors.scss', './base/typography.scss', './components/modal.scss', './base/clearDefault.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: $bg;
+    color: $text;
+    font-family: $font-main;
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-base;
+}
+
+header,
+footer {
+    padding: 1.25rem 2rem;
+    background: $hf;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+
+.wrapper {
+    min-height: 12rem;
+    padding: 1.5rem;
+}
+
+.ad img {
+    width: 180px;
+    max-width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+
+#add {
+    margin-top: 1rem;
+    font-size: $font-size-title;
+}
